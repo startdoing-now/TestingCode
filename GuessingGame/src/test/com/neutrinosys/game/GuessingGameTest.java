@@ -72,6 +72,8 @@ public class GuessingGameTest {
         String message = game.guess(correctAnswer);
         assertEquals("You got it in 4 tries", message);
     }
+
+    @Test
     public void testFiveWrongGuesses() {
         game.guess(-3);
         game.guess(-3);
